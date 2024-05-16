@@ -70,21 +70,6 @@ function Dashboard() {
     .catch((err) => alert(err));
   }
 
-  // useEffect(()=>{
-  //   if(localStorage.getItem("type")==0 ){
-  //     if(localStorage.getItem("rides")){
-  //       const _rides=localStorage.getItem("rides")
-  //       dispatch({
-  //         type:"SET_RIDES",
-  //         rides:JSON.parse(_rides)
-  //       })
-  //       setRides(JSON.parse(_rides))
-  //     }
-  //     else{
-  //         getRides()  
-  //     }
-  //   }
-  // },[])
 
   useEffect(()=>{
     getRides()
@@ -97,12 +82,10 @@ function Dashboard() {
       {utype==0?(
       <div className="user">
         <h1>{user?.userid}</h1>
-        <div className="top-menu">
+        {/* <div className="top-menu">
           <Topmenu/>
-        </div>
+        </div> */}
         <div className="score">
-          {/* <Score score={user?.userinfo.score}/> */}
-          {/* TEMPORARY */}
           <Score score={avgScore}/>
         </div>
 
@@ -112,9 +95,7 @@ function Dashboard() {
         </div>
       </div>):
       (
-        <div className="org">
-          {/* <Organization org={JSON.parse(localStorage.getItem("user"))}/> */}
-        </div>
+        <></>
       )
       
       }

@@ -13,10 +13,10 @@ const Rides = ({ ride,index }) => {
   const [show,setShow]=useState(false)
 
   const computed=(val)=>{
-    if (val>7.5){
+    if (val>=7.5){
       return {stat:"Good!",color:"green"}
     }
-    else if(val<7.5 && val >4){
+    else if(val<7.5 && val >=4){
       return {stat:"Average!",color:"orange"}
     }
     else{

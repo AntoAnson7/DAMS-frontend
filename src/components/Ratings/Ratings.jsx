@@ -97,7 +97,7 @@ function Ratings() {
                     </div>
                     
                     {avgInformations&&(<div className="information">
-                        <p style={{fontWeight:"bold",fontSize:"30px",textAlign:"center",color:"white"}}>{deets.userinfo_data.name}</p>
+                        <p style={{fontWeight:"bold",fontSize:"30px",textAlign:"center"}}>{deets.userinfo_data.name}</p>
 
                         <div className="speed-distance">
                             <div className="speed">
@@ -115,6 +115,18 @@ function Ratings() {
                             <label>Total driving time</label>
                             {/* <p>{avgInformations.ride_duration}</p> */}
                             <p>25 minuntes</p>
+                        </div>
+
+                        <div className="unsafe-inattention">
+                            <div className="unsafe">
+                                <label htmlFor="">Unsafe posture</label>
+                                <p>{avgInformations.pose_unsafe_perc.toFixed(2)}%</p>
+                            </div>
+
+                            <div className="r-inattention">
+                                <label htmlFor="">Unattentive</label>
+                                <p>{avgInformations.inattention.toFixed(2)}%</p>
+                            </div>
                         </div>
 
                         {avgInformations.drowsiness_status_count>0&&
@@ -142,16 +154,6 @@ function Ratings() {
                                 })}
                             </div>
                         </div>}
-
-                        <div className="unsafe-inattention">
-                            <div className="unsafe">
-                                <p>Unsafe posture : {avgInformations.pose_unsafe_perc.toFixed(2)}%</p>
-                            </div>
-
-                            <div className="r-inattention">
-                                <p>Unattentive : {avgInformations.inattention.toFixed(2)}%</p>
-                            </div>
-                        </div>
                     
                     </div>)}
                 </div>

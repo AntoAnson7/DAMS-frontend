@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
 }
 
 .score-in-rating{
@@ -10,12 +10,12 @@
 }
 
 .information{
-    background-color: black;
+    background-color: #fff; 
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-top: -30px;
@@ -24,7 +24,7 @@
 .speed-distance{
  display: flex;
  justify-content: space-between;
- gap: 10px;
+ gap: 20px;
 }
 
 .speed label,.distance label{
@@ -35,12 +35,11 @@
 }
 
 .speed,.distance{
-    background-color: rgba(0,0,255,0.5);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
-    color: #fff;
     text-align: center;
     font-size: 20px;
 }
@@ -54,18 +53,18 @@
 }
 
 .duration{
-    background-color: rgba(0,0,255,0.5);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
-    color: #fff;
     text-align: center;
     font-size: 20px; 
 }
 
 .drowsy-info{
-    background-color: rgba(255,0,0,0.5);
+    background-color: rgba(255,0,0,0.6);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 30px;
     padding-top: 10px;
@@ -94,12 +93,19 @@
 }
 
 .unsafe,.r-inattention{
-    background-color: rgba(0,137,0,0.5);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
-    color: #fff;
     text-align: center;
     font-size: 20px;
+}
+
+.unsafe label,.r-inattention label{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    flex: 1;
+    text-align: center;
 }
