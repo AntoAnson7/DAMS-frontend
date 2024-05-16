@@ -94,11 +94,10 @@ const Login = () => {
           
           <div className="register-options">
             <button onClick={()=>{handleLogin(0)}}>Login</button>
-            <p>Or</p>
-            <button className="org-login-button" onClick={()=>{handleLogin(1)}}>Login as Organisation</button>
+            <button className="register-button" onClick={()=>navigate("/register")}>Register New Account</button>
           </div>
 
-          <button className="register-button" onClick={()=>navigate("/register")}>Register New Account</button>
+          
         </div>
       </div>
     </div>

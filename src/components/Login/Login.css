@@ -12,7 +12,7 @@
   transition: all 0.5s ;
 }
 .login-img:hover{
-  transform: scale(1.2);
+  transform: scale(1.01);
 }
 
 .login-container {
@@ -87,8 +87,4 @@ h2 {
   border: 1px solid black;
   color: black;
   box-shadow: 2px 2px 80px 5px rgba(220,220,220, 0.7);
-}
-
-.register-button{
-  margin-top: 20px;
 }
