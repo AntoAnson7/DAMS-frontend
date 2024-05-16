@@ -1,0 +1,99 @@
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dams-4d380.appspot.com/o/bg.png?alt=media&token=6a7f6fff-9c8b-4afd-84f5-57af1292621f");
+    background-size: cover;
+  }
+  
+  .registration-box {
+    width: 60%;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .registration-box h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .registration-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  
+  .registration-options button {
+    padding: 10px 20px;
+    height: 60px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+    outline: none;
+    background-color: red;
+    transition: all 0.2s;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .reg-box-user,.reg-box-org{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pwd-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .reg-box-user input , .reg-box-org input,.pwd-box{
+    width: 50%;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .reg-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .regi-button{
+    width: 20%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 0.2s;
+  }
+  .regi-button:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+  }
+  

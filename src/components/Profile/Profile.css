@@ -1,0 +1,85 @@
+.profile-container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-left: 20vw;
+    /* background-color: #f0f0f0; Changed background color for better readability */
+}
+
+.profile-box {
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3); /* Example gradient */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/dams-4d380.appspot.com/o/s.jpg?alt=media&token=acc61398-e9ac-47f0-8859-b2dba032566a");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    height: 80%;
+}
+
+.profile-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    height: 35%;
+    padding: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.profile-details div {
+    display: flex;gap: 10px;justify-content: space-between;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.profile-details label {
+    font-weight: bold;
+}
+.profile-details span{
+    font-weight: bold;
+}
+
+
+.qr-code {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 35%;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+.download {
+    width: fit-content;
+    padding: 10px 20px; /* Reduced padding */
+    height: 40px; /* Reduced height */
+    position: absolute;
+    z-index: 50;
+    bottom: 20px; /* Moved to the bottom */
+    right: 20px; /* Moved to the right */
+    background-color: #4CAF50; /* Green color for download button */
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download:hover {
+    background-color: #45a049; /* Darker color on hover */
+}

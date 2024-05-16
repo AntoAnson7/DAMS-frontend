@@ -1,0 +1,39 @@
+  
+.Dashboard{
+    margin-left: 20vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    padding-bottom: 50px;
+}
+.top-menu{
+    width: 100%;
+}
+
+.score{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ride{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.no-rides-tag{
+    margin-top: -50px;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 50px;
+}

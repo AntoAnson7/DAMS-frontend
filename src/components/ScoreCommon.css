@@ -1,0 +1,28 @@
+.c-score-container {
+    position: relative;
+    width: 80px;
+  }
+  
+  .c-score-svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .c-progress-ring {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .c-progress-ring-circle {
+    transition: stroke-dasharray 2s ease-in-out;
+  }
+  
+  .c-score-value {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
